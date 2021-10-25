@@ -35,6 +35,9 @@
         create: true
         relink: false
         force: false
+    ~/.config/kitty: config/kitty
+    ~/.config/tmux: config/tmux
+    ~/.config/polybar: config/polybar
     ~/.config/lvim/config.lua: config/lvim/config.lua
     ~/.config/picom.conf: config/picom.conf
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
@@ -42,7 +45,4 @@
     ~/.zshrc: zshrc
     ~/.p10k.zsh: p10k.zsh
     ~/.oh-my-zsh/custom: oh-my-zsh/custom
-    ~/.config/kitty: config/kitty
-    ~/.config/tmux: config/tmux
-    ~/.config/polybar: config/polybar
     ~/.tmux: tmux
