@@ -1,3 +1,7 @@
+- defaults:
+        relink: true
+        create: true
+
 - clean: ['~']
 
 - link:
@@ -31,5 +35,6 @@
         create: true
         relink: false
         force: false
+    ~/.config/lvim/config.lua: config/lvim/config.lua
 
 
