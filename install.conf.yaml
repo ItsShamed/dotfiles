@@ -36,5 +36,5 @@
         relink: false
         force: false
     ~/.config/lvim/config.lua: config/lvim/config.lua
-
+    ~/.config/picom.conf: config/picom.conf
 
