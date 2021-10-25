@@ -39,3 +39,6 @@
     ~/.config/picom.conf: config/picom.conf
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/ranger/plugins: config/ranger/plugins
+    ~/.zshrc: zshrc
+    ~/.p10k.zsh: p10k.zsh
+    ~/.oh-my-zsh/custom: oh-my-zsh/custom
