@@ -44,4 +44,5 @@
     ~/.oh-my-zsh/custom: oh-my-zsh/custom
     ~/.config/kitty: config/kitty
     ~/.config/tmux: config/tmux
+    ~/.config/polybar: config/polybar
     ~/.tmux: tmux
