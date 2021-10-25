@@ -42,3 +42,4 @@
     ~/.zshrc: zshrc
     ~/.p10k.zsh: p10k.zsh
     ~/.oh-my-zsh/custom: oh-my-zsh/custom
+    ~/.config/kitty: config/kitty
