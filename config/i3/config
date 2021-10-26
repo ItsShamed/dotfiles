@@ -1,5 +1,6 @@
 # exec --no-startup-id picom -CGb
 exec VBoxClient-all
+exec --no-startup-id xss-lock -l "$HOME/.config/i3/lock.sh"
 exec_always --no-startup-id picom -f --experimental-backends
 exec --no-startup-id export TERMINAL=kitty
 exec_always --no-startup-id feh --bg-fill "/home/ryuki/Downloads/not slepp.png"
