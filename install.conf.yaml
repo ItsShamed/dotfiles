@@ -39,6 +39,7 @@
     ~/.config/tmux: config/tmux
     ~/.config/polybar: config/polybar
     ~/.config/neofetch: config/neofetch
+    ~/.config/rofi: config/rofi
     ~/.config/lvim/config.lua: config/lvim/config.lua
     ~/.config/picom.conf: config/picom.conf
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
