@@ -197,7 +197,8 @@ bindsym $mod+r mode "resize"
 # bar {
 #         status_command i3status
 # }
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# exec_always --no-startup-id "$HOME/.config/polybar/hack/scripts/pywal.sh $HOME/Downloads/not slepp.png"
+exec_always --no-startup-id "$HOME/.config/polybar/launch.sh --shapes"
 
 bindsym --release Print exec --no-startup-id scrot
 bindsym --release Shift+Print exec --no-startup-id scrot -s
