@@ -30,11 +30,17 @@
         create: false
         relink: false
         force: false
+    ~/.gtkrc-2.0:
+        path: gtkrc-2.0
+        create: false
+        relink: false
+        force: false
     ~/.config/i3:
         path: config/i3/
         create: true
         relink: false
         force: false
+    ~/.gtkrc-2.0.mine: gtkrc-2.0.mine
     ~/.config/kitty: config/kitty
     ~/.config/tmux: config/tmux
     ~/.config/polybar: config/polybar

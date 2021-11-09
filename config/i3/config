@@ -1,6 +1,6 @@
 # exec --no-startup-id picom -CGb
 exec VBoxClient-all
-exec --no-startup-id mopidy
+# exec --no-startup-id mopidy
 exec --no-startup-id xss-lock -l "$HOME/.config/i3/lock.sh"
 exec_always --no-startup-id picom -f --experimental-backends
 exec --no-startup-id export TERMINAL=kitty
@@ -17,8 +17,9 @@ exec_always --no-startup-id feh --bg-fill "/home/ryuki/Downloads/not slepp.png"
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-for_window [class=".*"] border pixel 1 
-border_radius 15 
+for_window [class="^.*"] border pixel 3 
+for_window [class="ocamlrun"] floating enable
+border_radius 5 
 gaps outer 15
 gaps inner 15
 

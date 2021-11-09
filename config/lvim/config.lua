@@ -153,9 +153,7 @@ lvim.autocommands.custom_groups = {
 -- vim.cmd("let g:opamshare = substitute(system('opam var share'),'\n$','','''')")
 -- vim.cmd('execute "set rtp+=/home/ryuki/.opam/default/share/merlin/vim"')
 vim.cmd("source ~/.vimrc")
-
-
-
+vim.cmd("set colorcolumn=80")
 -- lvim.lsp.override = {"ocamlls"}
 -- require("lsp.utils")
 local caml_opts = {}
