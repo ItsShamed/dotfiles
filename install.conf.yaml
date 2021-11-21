@@ -48,6 +48,7 @@
     ~/.config/rofi: config/rofi
     ~/.config/lvim/config.lua: config/lvim/config.lua
     ~/.config/picom.conf: config/picom.conf
+    ~/.config/chromium-flags.conf: config/chromium-flags.conf
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
     ~/.config/ranger/plugins: config/ranger/plugins
     ~/.zshrc: zshrc
