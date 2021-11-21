@@ -54,3 +54,6 @@
     ~/.p10k.zsh: p10k.zsh
     ~/.oh-my-zsh/custom: oh-my-zsh/custom
     ~/.tmux: tmux
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules] 
