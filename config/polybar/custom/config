@@ -28,6 +28,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/botstatus]
+monitor = ${env:MONITOR}
 height = 30
 foreground = ${colors.backround}
 bottom = true
@@ -45,6 +46,7 @@ padding-left = 1
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR}
 width = 100%
 height = 40
 ;offset-x = 1%
@@ -275,13 +277,13 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
 date =
 date-alt = " %Y-%m-%d"
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = %l:%M:%S %p
+time-alt = %l:%M:%S %p
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}

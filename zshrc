@@ -125,6 +125,7 @@ compinit
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.emacs.d/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

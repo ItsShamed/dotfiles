@@ -64,7 +64,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec "$HOME/.config/rofi/launchers/misc/launcher.sh"
+bindsym $mod+d exec "$HOME/.config/rofi/launchers/slate/launcher.sh"
 bindcode $mod+23 exec "rofi -modi window -show window"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -165,7 +165,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+e exec "$HOME/.config/rofi/bin/powermenu"
+bindsym $mod+Shift+e exec "$HOME/.config/rofi/applets/applets/powermenu.sh"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -201,6 +201,6 @@ bindsym $mod+r mode "resize"
 #         status_command i3status
 # }
 # exec_always --no-startup-id "$HOME/.config/polybar/hack/scripts/pywal.sh $HOME/Downloads/not slepp.png"
-exec_always --no-startup-id "$HOME/.config/polybar/custom/launch.sh"
+exec_always --no-startup-id "$HOME/.config/polybar/custom/launch-no-mon.sh"
 
 bindsym --release Print exec --no-startup-id scrot
