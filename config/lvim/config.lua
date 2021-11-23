@@ -132,7 +132,6 @@ lvim.plugins = {
   {"tpope/vim-surround"},
   {"ocaml/vim-ocaml"},
   {"kevinhwang91/rnvimr",
-          run = "make sync",
           config = function ()
                   vim.cmd("let g:rnvimr_ex_enable = 1")
           end
@@ -142,6 +141,9 @@ lvim.plugins = {
       "folke/trouble.nvim",
       cmd = "TroubleToggle",
     },
+  {"tomasr/molokai"},
+  {"sonph/onehalf"},
+  {"gosukiwi/vim-atom-dark"}
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
