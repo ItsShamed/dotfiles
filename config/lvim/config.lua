@@ -143,7 +143,24 @@ lvim.plugins = {
     },
   {"tomasr/molokai"},
   {"sonph/onehalf"},
-  {"gosukiwi/vim-atom-dark"}
+  {"gosukiwi/vim-atom-dark"},
+        {"andweeb/presence.nvim",
+                config = function ()
+                  vim.cmd("let g:presence_neovim_image_text = \"LunarVim\" ")
+                  require("presence"):setup({
+                          buttons = {
+                                        {
+                                                label = ".dotfiles",
+                                                url = "https://github.com/EpiMine/EpiMineAPI"
+                                        },
+                                        {
+                                                label = "Download LunarVim",
+                                                url = "https://github.com/LunarVim/LunarVim"
+                                        }
+                                }
+                        })
+                end
+        }
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
@@ -160,3 +177,4 @@ vim.cmd("set colorcolumn=80")
 -- require("lsp.utils")
 local caml_opts = {}
 require("lvim.lsp.manager").setup("ocamllsp", caml_opts)
+require("lvim.lsp.manager").setup("ocaml-language-server", caml_opts)

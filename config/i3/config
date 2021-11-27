@@ -15,6 +15,7 @@ exec_always --no-startup-id exec bash $HOME/.fehbg
 set $mod Mod4
 for_window [class="^.*"] border pixel 3 
 for_window [class="ocamlrun"] floating enable
+for_window [class="Pavucontrol"] floating enable
 gaps outer 15
 gaps inner 15
 
@@ -203,4 +204,6 @@ bindsym $mod+r mode "resize"
 # exec_always --no-startup-id "$HOME/.config/polybar/hack/scripts/pywal.sh $HOME/Downloads/not slepp.png"
 exec_always --no-startup-id "$HOME/.config/polybar/custom/launch-no-mon.sh"
 
-bindsym --release Print exec --no-startup-id scrot
+bindsym --release Print exec --no-startup-id scrot '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
+bindsym --release Shift+Print exec --no-startup-id scrot -s '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
+bindsym --release Shift+Ctrl+Print exec --no-startup-id scrot -u '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
