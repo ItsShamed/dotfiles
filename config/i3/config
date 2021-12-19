@@ -11,6 +11,7 @@
 
 exec_always --no-startup-id picom -f -c --experimental-backends
 exec_always --no-startup-id exec bash $HOME/.fehbg
+exec_always --no-startup-id xautolock -time 5 -locker "systemctl suspend"
 
 set $mod Mod4
 for_window [class="^.*"] border pixel 3 
