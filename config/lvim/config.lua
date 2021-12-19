@@ -175,6 +175,3 @@ vim.cmd("source ~/.vimrc")
 vim.cmd("set colorcolumn=80")
 -- lvim.lsp.override = {"ocamlls"}
 -- require("lsp.utils")
-local caml_opts = {}
-require("lvim.lsp.manager").setup("ocamllsp", caml_opts)
-require("lvim.lsp.manager").setup("ocaml-language-server", caml_opts)
