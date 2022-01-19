@@ -1,5 +1,8 @@
 [user]
 	email = thedjplays.gaming@gmail.com
-	name = ItsShamed
-[init]
-	defaultBranch = main
+	name = Ruki
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
