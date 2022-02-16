@@ -41,6 +41,7 @@
         relink: false
         force: false
     ~/.gtkrc-2.0.mine: gtkrc-2.0.mine
+    ~/.config/gtk-3.0: gtk-3.0
     ~/.config/kitty: config/kitty
     ~/.config/tmux: config/tmux
     ~/.config/polybar: config/polybar
@@ -55,6 +56,7 @@
     ~/.p10k.zsh: p10k.zsh
     ~/.oh-my-zsh/custom: oh-my-zsh/custom
     ~/.tmux: tmux
+    ~/.icons: icons
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules] 

@@ -3,7 +3,7 @@
 
 include "/home/ryuki/.gtkrc-2.0.mine"
 gtk-theme-name="Mojave-dark"
-gtk-icon-theme-name="Adwaita"
+gtk-icon-theme-name="Mojave-dark"
 gtk-font-name="Cantarell 11"
 gtk-cursor-theme-name="macOSBigSur"
 gtk-cursor-theme-size=0
