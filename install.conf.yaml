@@ -57,6 +57,7 @@
     ~/.oh-my-zsh/custom: oh-my-zsh/custom
     ~/.tmux: tmux
     ~/.icons: icons
+    ~/.config/dunst: config/dunst
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules] 
