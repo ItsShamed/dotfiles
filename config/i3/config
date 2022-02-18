@@ -208,3 +208,5 @@ exec_always --no-startup-id "$HOME/.config/polybar/custom/launch-no-mon.sh"
 bindsym --release Print exec --no-startup-id scrot '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
 bindsym --release Shift+Print exec --no-startup-id scrot -s '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
 bindsym --release Shift+Ctrl+Print exec --no-startup-id scrot -u '/tmp/%F_%T_$wx$h.png' -e 'xclip -selection clipboard -target image/png -i $f'
+
+exec --no-startup-id "$HOME/.scripts/workspace-setups"
