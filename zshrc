@@ -117,6 +117,7 @@ source $ZSH/oh-my-zsh.sh
 alias tmux="TERM=xterm-256color tmux"
 alias lg="lazygit"
 alias ls="exa --git --icons"
+alias odepita="onedrive --synchronize --single-folder 'Documents/EPITA'"
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
