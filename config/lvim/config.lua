@@ -137,22 +137,53 @@ lvim.builtin.treesitter.highlight.enabled = true
 
 -- Additional Plugins
 lvim.plugins = {
-    {"folke/tokyonight.nvim"},
+    { "folke/tokyonight.nvim" },
     {
       "folke/trouble.nvim",
       cmd = "TroubleToggle",
     },
     {
       "lukas-reineke/indent-blankline.nvim",
-      config = function ()
-        require('indent_blankline').setup{
+      config = function()
+          require('indent_blankline').setup {
           show_end_of_line = false
-      }
+          }
       end
-  }
+    },
+    {
+    "OmniSharp/omnisharp-vim"
+    },
+    {
+    "tpope/vim-surround"
+    },
+    {
+        "jpalardy/vim-slime",
+    }
 }
+vim.g.slime_target = "tmux"
+vim.opt.colorcolumn = "80"
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 8
+vim.opt.softtabstop = 4
+vim.opt.cindent = true
+
+local omnisharp_bin = "/home/ryuki/.local/share/nvim/lsp_servers/omnisharp/omnisharp/omnisharp/OmniSharp.exe"
+vim.list_extend(lvim.lsp.override, { "ocamllsp" })
+
+require("lvim.lsp.manager").setup("omnisharp", {
+    cmd = { "mono", omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
+    root_dir = require("lspconfig").util.root_pattern("*.cs", ".csproj", ".sln")
+})
+
+require("lvim.lsp.manager").setup("ocamlls", {
+    cmd = { "ocamllsp" },
+    root_dir = require("lspconfig").util.root_pattern("*.ml", "*.mli")
+})
+
+lvim.builtin.treesitter.indent = { enable = true, disable = { "c", "cpp", "cshap" } }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
--- lvim.autocommands.custom_groups = {
---   { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
--- }
+lvim.autocommands.custom_groups = {
+  -- { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
+  { "BufWritePost", "*.lua", "!dos2unix <afile>" }
+}

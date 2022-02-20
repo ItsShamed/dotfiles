@@ -58,6 +58,8 @@
     ~/.tmux: tmux
     ~/.icons: icons
     ~/.config/dunst: config/dunst
+    ~/.config/zathura: config/zathura
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules] 
+    - [dos2unix config/lvim/config.lua, Converting pruging CRLF in LunarVim config]
