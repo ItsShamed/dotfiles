@@ -62,4 +62,4 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules] 
-    - [dos2unix config/lvim/config.lua, Converting pruging CRLF in LunarVim config]
+    - [dos2unix config/*/*, Purging CRLF]
